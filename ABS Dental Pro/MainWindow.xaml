@@ -1,0 +1,641 @@
+﻿<Window x:Class="ABS_Dental_Pro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ABS_Dental_Pro"
+        mc:Ignorable="d"
+        Title="ABS Dental Pro" Icon="/Images/tooth.png" Height="751.057" Width="975.359" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Window.Resources>
+        <Style x:Key="myLabels" TargetType="{x:Type Label}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+        </Style>
+        <Style x:Key="myTextBoxes" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+        </Style>
+        <Style  x:Key="myComboBoxes" TargetType="{x:Type ComboBox}">
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style x:Key="myTextBlocks" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"></Setter>
+            <!--<Setter Property="Text" Value="jhilukjmhgty tg6gyur gtgughugtibyugih"></Setter>-->
+        </Style>
+        <Style x:Key="myTextBlocks2" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <!--<Setter Property="Text" Value="jhilukjmhgty tg6gyur gtgughugtibyugih"></Setter>-->
+        </Style>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="local:CustomCommands.Exit" 
+                        CanExecute="ExitCommand_CanExecute" Executed="ExitCommand_Executed" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="mnuMain" Margin="0" VerticalAlignment="Top"
+            HorizontalAlignment="Left"  >
+            <MenuItem Header="_Aplicație" FontSize="12">
+                <MenuItem Header="_Ieșire" HorizontalAlignment="Left" Command="local:CustomCommands.Exit">
+                    <MenuItem.Icon>
+                        <Image Source="/Images/exit.png" Height="17" Width="17"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Ajutor"   FontSize="12"  >
+                <MenuItem Header="_Despre" HorizontalAlignment="Left" Click="ShowDespreWindow">
+                    <MenuItem.Icon>
+                        <Image Source="/Images/about.png" Height="20" Width="20"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TabControl x:Name="tabControl" Margin="0,30,0,0">
+            <TabItem Header="Pacienți" FontSize="14">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="btnAdaugaPacient" ToolTip="Adaugă pacient" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnAdaugaPacient_Click" Margin="20,20,0,20" Width="140" Height="40" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                </Image>
+                                <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnCautaPacient" ToolTip="Caută pacient" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="40,0,0,0" Width="140" Height="40" Click="btnCautaPacient_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/search.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="35">
+                                </Image>
+                                <TextBlock Text="Caută" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,0,0,0" RenderTransformOrigin="0.446,0.584" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnModifica" ToolTip="Modifică pacient" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0" IsEnabled="False" Click="btnModifica_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/edit.png" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="35">
+                                </Image>
+                                <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0"/>
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnIstoricPacient" ToolTip="Vezi istoricul programărilor" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0" IsEnabled="False" Click="btnIstoricPacient_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/History-icon128.png" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="35">
+                                </Image>
+                                <TextBlock Text="Istoric" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0"/>
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnSterge" ToolTip="Șterge pacient" HorizontalAlignment="Right" Width="140" Height="40" Margin="40,0,0,0" IsEnabled="False" Click="btnSterge_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/remove.png" RenderTransformOrigin="0.5,0.5" Margin="0,0,25,0" Width="35" Height="35">
+                                </Image>
+                                <TextBlock Text="Șterge" FontSize="16" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <TextBlock Text="Total număr pacienți:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                        <TextBlock x:Name="tbNrPacienti" FontSize="16" Margin="10,20,0,0" Height="20" />
+                    </StackPanel>
+                    <DataGrid Name="dataGridPacienti" ItemsSource="{Binding listaPacientiProp}" 
+                              AutoGenerateColumns="False" CanUserAddRows="False" SelectionMode="Single"
+                               IsReadOnly="True" 
+                             ScrollViewer.CanContentScroll="True"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto"
+                             ScrollViewer.HorizontalScrollBarVisibility="Auto"  Height="655"
+                             DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="dataGridPacienti_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Număr Fișă" Binding="{Binding NumarFisa}"/>
+                            <DataGridTextColumn Header="Medic" Binding="{Binding Medic}"/>
+                            <DataGridTextColumn Header="Nume" Binding="{Binding Nume}"/>
+                            <DataGridTextColumn Header="Prenume" Binding="{Binding Prenume}" />
+                            <DataGridTextColumn Header="CNP" Binding="{Binding Cnp}"/>
+                            <DataGridTextColumn Header="Serie CI" Binding="{Binding SerieCi}" />
+                            <DataGridTextColumn Header="Număr CI" Binding="{Binding NumarCi}" />
+                            <DataGridTextColumn Header="Vârsta" Binding="{Binding Varsta}" />
+                            <DataGridTextColumn Header="Sex" Binding="{Binding Sex}"/>
+                            <DataGridTextColumn Header="Telefon" Binding="{Binding Telefon}"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                            <DataGridTextColumn Header="Observații" Binding="{Binding Observatii}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Programări" FontSize="14">
+                <TabControl x:Name="tabProgramari" Margin="0,16,0,4">
+                    <TabItem  x:Name="tabItemMedic1"
+                              Visibility="{Binding ElementName=detaliiMedic1, Path=Visibility}" Header="N.A." FontSize="14">
+                        <StackPanel x:Name="stackPanel11">
+                            <StackPanel x:Name="stackPanel1" Orientation="Horizontal">
+                                <Button x:Name="btnAdaugaProgramareMedic1" ToolTip="Adaugă programare" VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="20,20,0,20" Width="140" Height="40" Click="btnAdaugaProgramareMedic1_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                        </Image>
+                                        <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnModificaProgramareMedic1" ToolTip="Modifică programare" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0" Click="btnModificaProgramareMedic1_Click"  >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/edit.png" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="40">
+                                        </Image>
+                                        <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                                    </StackPanel>
+                                </Button>
+                                
+                                <TextBlock Text="Data curentă:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                                <TextBlock x:Name="tbDataCurenta1" FontSize="16" Margin="10,20,0,0" Height="20" />
+                                
+                                <Button x:Name="btnInapoiProgramareMedic1"  HorizontalAlignment="Left" Width="60" Height="40" Margin="510,0,0,0"   
+                                       ToolTip="Dă înapoi programările pacienților cu o zi" Click="btnInapoiProgramareMedic1_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-icon.png" Margin="0"  Width="30"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnInainteProgramareMedic1"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"  
+                                      ToolTip="Dă înainte programările pacienților cu o zi" Click="btnInainteProgramareMedic1_Click"   >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInapoiProgramareMedic1"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                       ToolTip="Dă înapoi programările pacienților cu două săptămâni"  Click="btnRepedeInapoiProgramareMedic1_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInainteProgramareMedic1"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                           ToolTip="Dă înainte programările pacienților cu două săptămâni"  Click="btnRepedeInainteProgramareMedic1_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <Canvas x:Name="programariPacientiCanvas1" Margin="20,20,0,0">
+                                <local:ProgramariPacienti x:Name="programariPacienti1"></local:ProgramariPacienti>
+                            </Canvas>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem  x:Name="tabItemMedic2"
+                              Visibility="{Binding ElementName=detaliiMedic2, Path=Visibility}" Header="N.A." FontSize="14">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btnAdaugaProgramareMedic2"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="20,20,0,20" Width="140" Height="40" Click="btnAdaugaProgramareMedic2_Click" Background="#FFDDDDDD" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                        </Image>
+                                        <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnModificaProgramareMedic2"  Click="btnModificaProgramareMedic2_Click" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0" Background="#FFDDDDDD"  >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/edit.png" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="40">
+                                        </Image>
+                                        <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <TextBlock Text="Data curentă:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                                <TextBlock x:Name="tbDataCurenta2" FontSize="16" Margin="10,20,0,0" Height="20" />
+                                
+                                <Button x:Name="btnInapoiProgramareMedic2"  HorizontalAlignment="Left" Width="60" Height="40" Margin="510,0,0,0"   
+                                       ToolTip="Dă înapoi programările pacienților cu o zi" Click="btnInapoiProgramareMedic2_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-icon.png" Margin="0"  Width="30"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnInainteProgramareMedic2"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"  
+                                      ToolTip="Dă înainte programările pacienților cu o zi" Click="btnInainteProgramareMedic2_Click"   >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInapoiProgramareMedic2"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                       ToolTip="Dă înapoi programările pacienților cu două săptămâni"  Click="btnRepedeInapoiProgramareMedic2_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInainteProgramareMedic2"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                           ToolTip="Dă înainte programările pacienților cu două săptămâni"  Click="btnRepedeInainteProgramareMedic2_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <Canvas x:Name="programariPacientiCanvas2" Margin="20,20,0,0">
+                                <local:ProgramariPacienti x:Name="programariPacienti2"></local:ProgramariPacienti>
+                            </Canvas>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem x:Name="tabItemMedic3"
+                      Visibility="{Binding ElementName=detaliiMedic3, Path=Visibility}" Header="N.A." FontSize="14">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btnAdaugaProgramareMedic3"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="20,20,0,20" Width="140" Height="40" Click="btnAdaugaProgramareMedic3_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                        </Image>
+                                        <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnModificaProgramareMedic3" Click="btnModificaProgramareMedic3_Click"  HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0"  >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/edit.png" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="40">
+                                        </Image>
+                                        <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <TextBlock Text="Data curentă:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                                <TextBlock x:Name="tbDataCurenta3" FontSize="16" Margin="10,20,0,0" Height="20" />
+                                
+                                <Button x:Name="btnInapoiProgramareMedic3"  HorizontalAlignment="Left" Width="60" Height="40" Margin="510,0,0,0"   
+                                       ToolTip="Dă înapoi programările pacienților cu o zi" Click="btnInapoiProgramareMedic3_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-icon.png" Margin="0"  Width="30"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnInainteProgramareMedic3"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"  
+                                      ToolTip="Dă înainte programările pacienților cu o zi" Click="btnInainteProgramareMedic3_Click"   >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInapoiProgramareMedic3"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                       ToolTip="Dă înapoi programările pacienților cu două săptămâni"  Click="btnRepedeInapoiProgramareMedic3_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInainteProgramareMedic3"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                           ToolTip="Dă înainte programările pacienților cu două săptămâni"  Click="btnRepedeInainteProgramareMedic3_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <Canvas x:Name="programariPacientiCanvas3" Margin="20,20,0,0">
+                                <local:ProgramariPacienti x:Name="programariPacienti3"></local:ProgramariPacienti>
+                            </Canvas>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem x:Name="tabItemMedic4"
+                            Visibility="{Binding ElementName=detaliiMedic4, Path=Visibility}"  Header="N.A." FontSize="14">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btnAdaugaProgramareMedic4"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="20,20,0,20" Width="140" Height="40" Click="btnAdaugaProgramareMedic4_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                        </Image>
+                                        <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnModificaProgramareMedic4"  Click="btnModificaProgramareMedic4_Click" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0"  >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/edit.png" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="40">
+                                        </Image>
+                                        <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <TextBlock Text="Data curentă:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                                <TextBlock x:Name="tbDataCurenta4" FontSize="16" Margin="10,20,0,0" Height="20" />
+                                
+                                <Button x:Name="btnInapoiProgramareMedic4"  HorizontalAlignment="Left" Width="60" Height="40" Margin="510,0,0,0"   
+                                       ToolTip="Dă înapoi programările pacienților cu o zi" Click="btnInapoiProgramareMedic4_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-icon.png" Margin="0"  Width="30"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnInainteProgramareMedic4"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"  
+                                      ToolTip="Dă înainte programările pacienților cu o zi" Click="btnInainteProgramareMedic4_Click"   >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInapoiProgramareMedic4"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                       ToolTip="Dă înapoi programările pacienților cu două săptămâni"  Click="btnRepedeInapoiProgramareMedic4_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInainteProgramareMedic4"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                           ToolTip="Dă înainte programările pacienților cu două săptămâni"  Click="btnRepedeInainteProgramareMedic4_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <Canvas x:Name="programariPacientiCanvas4" Margin="20,20,0,0">
+                                <local:ProgramariPacienti x:Name="programariPacienti4"></local:ProgramariPacienti>
+                            </Canvas>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem x:Name="tabItemMedic5"
+                     Visibility="{Binding ElementName=detaliiMedic5, Path=Visibility}" Header="N.A." FontSize="14">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btnAdaugaProgramareMedic5"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="20,20,0,20" Width="140" Height="40" Click="btnAdaugaProgramareMedic5_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                        </Image>
+                                        <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnModificaProgramareMedic5" Click="btnModificaProgramareMedic5_Click" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0"  >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/edit.png" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="40">
+                                        </Image>
+                                        <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <TextBlock Text="Data curentă:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                                <TextBlock x:Name="tbDataCurenta5" FontSize="16" Margin="10,20,0,0" Height="20" />
+                                
+                                <Button x:Name="btnInapoiProgramareMedic5"  HorizontalAlignment="Left" Width="60" Height="40" Margin="510,0,0,0"   
+                                       ToolTip="Dă înapoi programările pacienților cu o zi" Click="btnInapoiProgramareMedic5_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-icon.png" Margin="0"  Width="30"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnInainteProgramareMedic5"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"  
+                                      ToolTip="Dă înainte programările pacienților cu o zi" Click="btnInainteProgramareMedic5_Click"   >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInapoiProgramareMedic5"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                       ToolTip="Dă înapoi programările pacienților cu două săptămâni"  Click="btnRepedeInapoiProgramareMedic5_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInainteProgramareMedic5"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                           ToolTip="Dă înainte programările pacienților cu două săptămâni"  Click="btnRepedeInainteProgramareMedic5_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <Canvas x:Name="programariPacientiCanvas5" Margin="20,20,0,0">
+                                <local:ProgramariPacienti x:Name="programariPacienti5"></local:ProgramariPacienti>
+                            </Canvas>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem x:Name="tabItemMedic6"   
+                 Visibility="{Binding ElementName=detaliiMedic6, Path=Visibility}" 
+               Header="N.A." FontSize="14">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btnAdaugaProgramareMedic6"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="20,20,0,20" Width="140" Height="40" Click="btnAdaugaProgramareMedic6_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                        </Image>
+                                        <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnModificaProgramareMedic6" Click="btnModificaProgramareMedic6_Click" HorizontalAlignment="Left" Width="140" Height="40" Margin="40,0,0,0"  >
+                                    <StackPanel Orientation="Horizontal">
+
+                                        <Image Source="/Images/edit.png" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="40">
+                                        </Image>
+                                        <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <TextBlock Text="Data curentă:" FontSize="16" Height="20" Margin="40,20,0,0"/>
+                                <TextBlock x:Name="tbDataCurenta6" FontSize="16" Margin="10,20,0,0" Height="20" />
+                                
+                                <Button x:Name="btnInapoiProgramareMedic6"  HorizontalAlignment="Left" Width="60" Height="40" Margin="510,0,0,0"   
+                                       ToolTip="Dă înapoi programările pacienților cu o zi" Click="btnInapoiProgramareMedic6_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-icon.png" Margin="0"  Width="30"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnInainteProgramareMedic6"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"  
+                                      ToolTip="Dă înainte programările pacienților cu o zi" Click="btnInainteProgramareMedic6_Click"   >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInapoiProgramareMedic6"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                       ToolTip="Dă înapoi programările pacienților cu două săptămâni"  Click="btnRepedeInapoiProgramareMedic6_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-left-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnRepedeInainteProgramareMedic6"  HorizontalAlignment="Left" Width="60" Height="40" Margin="40,0,0,0"
+                                           ToolTip="Dă înainte programările pacienților cu două săptămâni"  Click="btnRepedeInainteProgramareMedic6_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/Actions-arrow-right-double-icon.png" Margin="0"  Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        </Image>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <Canvas x:Name="programariPacientiCanvas6"  Margin="20,20,0,0">
+                                <local:ProgramariPacienti x:Name="programariPacienti6"></local:ProgramariPacienti>
+                            </Canvas>
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="Plăți" FontSize="14" Height="24.62" VerticalAlignment="Bottom">
+                <StackPanel Margin="0">
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Button x:Name="btnCautaPacientPlata" ToolTip="Caută pacient pentru o plată" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0" Width="140" Height="40" Click="btnCautaPacientPlata_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Images/search.png" HorizontalAlignment="Left"
+                                    VerticalAlignment="Center" Margin="0,0,10,0" RenderTransformOrigin="0.5,0.5" Width="35"/>
+                                <TextBlock Text="Caută"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,0,0,0" RenderTransformOrigin="0.446,0.584" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnAdaugaPlata" ToolTip="Adaugă plată lucrare nouă" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,20,0,20" Width="140" Height="40" Click="btnAdaugaPlata_Click" IsEnabled="False" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Images/add.png" HorizontalAlignment="Left"
+                                    VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50"/>
+                                <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnAdaugaPlataDoi" ToolTip="Adaugă plată tranșă" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,20,0,20" Width="140" Height="40" IsEnabled="False" Click="btnAdaugaPlataDoi_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Images/math-add-icon.png" HorizontalAlignment="Left"
+                                    VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="40" Height="35"/>
+                                <TextBlock Text="Tranșă"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock x:Name="tbInformatii" Text="Informații pacient" FontSize="24" Margin="30,0,0,10"/>
+                            <Grid Height="470.8" Margin="10,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="700"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="31*"/>
+                                    <RowDefinition Height="95*" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Număr Fișă" Grid.Column="0" Grid.Row="0" Margin="5,0,0,0" Grid.ColumnSpan="2"/>
+                                <TextBlock x:Name="tbNumarFisa"   Grid.Column="1" Grid.Row="0" Style="{StaticResource myTextBlocks}" Margin="0,0,10,5"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Medic" Grid.Column="0" Grid.Row="1" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbMedic" Grid.Column="1" Grid.Row="1" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0" VerticalAlignment="Top"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Nume" Grid.Column="0" Grid.Row="2" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbNume" Grid.Column="1" Grid.Row="2" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Prenume" Grid.Column="0" Grid.Row="3" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbPrenume" Grid.Column="1" Grid.Row="3" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="CNP" Grid.Column="0" Grid.Row="4" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbCnp" Grid.Column="1" Grid.Row="4" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Seria CI" Grid.Column="0" Grid.Row="5" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbSeriaCi" Grid.Column="1" Grid.Row="5" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Număr CI" Grid.Column="0" Grid.Row="6" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbNumarCi" Grid.Column="1" Grid.Row="6" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Vârsta" Grid.Column="0" Grid.Row="7" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbVarsta" Grid.Column="1" Grid.Row="7" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Sex" Grid.Column="0" Grid.Row="8" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbSex"  Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="16" Height="24.236"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Telefon" Grid.Column="0" Grid.Row="9" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbTelefon" Grid.Column="1" Grid.Row="9" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Email" Grid.Column="0" Grid.Row="10" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbEmail" Grid.Column="1" Grid.Row="10" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+                                <TextBlock Style="{StaticResource myTextBlocks}" Text="Observații" Grid.Column="0" Grid.Row="11" Margin="5,0,0,0"/>
+                                <TextBlock x:Name="tbObservatii"  TextWrapping="Wrap" Grid.Column="1" Grid.Row="11" Style="{StaticResource myTextBlocks}" Margin="0,0,10,0"/>
+
+                                <Button x:Name="btnModificaPacient" ToolTip="Modifică pacient" Grid.Row="12"  Grid.Column="0"  Grid.ColumnSpan="2"  Margin="30,10,0,0"  Width="140" Height="40" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnModificaPacient_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="Images/edit.png" HorizontalAlignment="Left"
+                                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="40" Height="40"/>
+                                        <TextBlock Text="Modifică"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+
+                            </Grid>
+
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock x:Name="tbSituatie" Text="Situație plăți" FontSize="24" Margin="20,0,0,10"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="80"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Medic" Grid.Column="0" Style="{StaticResource myTextBlocks2}" Grid.Row="0" Grid.ColumnSpan="2" Margin="1,1,252,39" Grid.RowSpan="2"/>
+                                <TextBlock x:Name="tbMedic2" Grid.Column="1" Grid.Row="0" Style="{StaticResource myTextBlocks2}" Margin="0" Height="28" Width="253" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                <TextBlock Text="Total de plătit" Grid.Row="1" Grid.Column="0" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock x:Name="tbTotal" Grid.Row="1" Grid.Column="1" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock Text="Total plătit" Grid.Row="2" Grid.Column="0" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock x:Name="tbTransa" Grid.Row="2" Grid.Column="1" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock Text="Rest de plătit" Grid.Row="3" Grid.Column="0" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock x:Name="tbRest" Foreground="Red" FontWeight="Bold" Grid.Row="3" Grid.Column="1" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock Text="Data" Grid.Row="4" Grid.Column="0" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock x:Name="tbData"  Grid.Row="4" Grid.Column="1" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock Text="Descriere" Grid.Row="5" Grid.Column="0" Style="{StaticResource myTextBlocks2}"/>
+                                <TextBlock x:Name="tbDescriere"  Grid.Row="5" Grid.Column="1" Style="{StaticResource myTextBlocks2}"/>
+                                
+                                <Button x:Name="btnIstoricPlati" ToolTip="Vezi istoricul plăților" Grid.Row="6" Grid.Column ="0"  HorizontalAlignment="Left" Width="140" Margin="30,10,0,0" IsEnabled="False"  Grid.ColumnSpan="2" Height="40" VerticalAlignment="Top" Click="btnIstoricPlati_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="Images/if_wallet_286672.png" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="35"/>
+                                        <TextBlock Text="Istoric" FontSize="16" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <Button x:Name="btnModificaPlata" ToolTip="Modifică ultima plată" Grid.Row="6"  Grid.Column="0"  Grid.ColumnSpan="2"  Margin="220,10,0,0"  Width="140" Height="40" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnModificaPlata_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="Images/edit.png" HorizontalAlignment="Left"
+                                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="40" Height="40"/>
+                                        <TextBlock Text="Modifică"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                                    </StackPanel>
+                                </Button>
+                                
+                            </Grid>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Medici" Margin="0" FontSize="14">
+                <ScrollViewer CanContentScroll="True">
+                    <Grid Margin="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="17*"></ColumnDefinition>
+                            <ColumnDefinition Width="18*"/>
+                            <ColumnDefinition Width="35*"></ColumnDefinition>
+                            <ColumnDefinition Width="35*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button Name="btnAdaugaMedic" Grid.Row="0" Grid.Column="0" ToolTip="Adaugă medic"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="30,30,0,0" Width="140" Height="40" Click="btnAdaugaMedic_Click" Grid.ColumnSpan="2" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/add.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                                </Image>
+                                <TextBlock Text="Adaugă" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                            </StackPanel>
+                        </Button>
+                        <local:DetaliiMedicCombo x:Name="detaliiMedic1" Margin="0,15,460,0" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" Visibility="Hidden"
+                                             IsVisibleChanged="detaliiMedic1_IsVisibleChanged" Grid.ColumnSpan="3"     />
+                        <local:DetaliiMedicCombo x:Name="detaliiMedic2" Margin="0,15,260,0"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False"
+                                            IsVisibleChanged="detaliiMedic2_IsVisibleChanged"      Visibility="Hidden" Grid.ColumnSpan="3"/>
+                        <local:DetaliiMedicCombo x:Name="detaliiMedic3" Margin="430,15,0,15"  Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" Visibility="Hidden"
+                                           IsVisibleChanged="detaliiMedic3_IsVisibleChanged" Grid.ColumnSpan="2"       ></local:DetaliiMedicCombo>
+                        <local:DetaliiMedicCombo x:Name="detaliiMedic4" Margin="0,15,460,15"  Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" Visibility="Hidden"
+                                          IsVisibleChanged="detaliiMedic4_IsVisibleChanged" Grid.ColumnSpan="3"        ></local:DetaliiMedicCombo>
+                        <local:DetaliiMedicCombo x:Name="detaliiMedic5" Margin="0,15,260,15"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" Visibility="Hidden"
+                                                 IsVisibleChanged="detaliiMedic5_IsVisibleChanged" Grid.ColumnSpan="3"></local:DetaliiMedicCombo>
+                        <local:DetaliiMedicCombo x:Name="detaliiMedic6" Margin="430,15,0,15"  Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" Visibility="Hidden"
+                            IsVisibleChanged="detaliiMedic6_IsVisibleChanged" Grid.ColumnSpan="2"></local:DetaliiMedicCombo>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

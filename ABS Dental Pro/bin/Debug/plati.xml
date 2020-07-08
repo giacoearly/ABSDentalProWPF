@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plati>
+  <plata>
+    <pacient>Mapol Bogdan</pacient>
+    <medic>Dr. Pop Loredana</medic>
+    <total>2100</total>
+    <transa>800</transa>
+    <rest>1300</rest>
+    <data>28.02.2018</data>
+    <descriere>hunkjinhhhhhhhhhhh</descriere>
+  </plata>
+  <plata>
+    <pacient>Kulea Iuliana</pacient>
+    <medic>Dr. Ionescu Elena</medic>
+    <total>800</total>
+    <transa>500</transa>
+    <rest>300</rest>
+    <data>28.02.2018</data>
+    <descriere>y98huhnm ugt8ikbjn</descriere>
+  </plata>
+  <plata>
+    <pacient>Marc Dorian</pacient>
+    <medic>Dr. Popa Bogdan</medic>
+    <total>870</total>
+    <transa>300</transa>
+    <rest>570</rest>
+    <data>28.02.2018</data>
+    <descriere>ijlkn oujb kjb l hunoijn</descriere>
+  </plata>
+  <plata>
+    <pacient>Șicleru Bogdan</pacient>
+    <medic>Dr. Pop Loredana</medic>
+    <total>500</total>
+    <transa>500</transa>
+    <rest>0</rest>
+    <data>01.03.2018</data>
+    <descriere>ibjbhi hiuggvhhhhhhhhhh</descriere>
+  </plata>
+  <plata>
+    <pacient>Avramescu Laurențiu Adrian</pacient>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <total>555</total>
+    <transa>300</transa>
+    <rest>255</rest>
+    <data>01.03.2018</data>
+    <descriere></descriere>
+  </plata>
+  <plata>
+    <pacient>Guetta David</pacient>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <total>1500</total>
+    <transa>1500</transa>
+    <rest>0</rest>
+    <data>01.03.2018</data>
+    <descriere>jjnhpo oihnoiuhjoihj0ip ohu</descriere>
+  </plata>
+  <plata>
+    <pacient>Briceag Marcel</pacient>
+    <medic>Dr. Ionescu Elena</medic>
+    <total>1000</total>
+    <transa>800</transa>
+    <rest>200</rest>
+    <data>04.04.2018</data>
+    <descriere></descriere>
+  </plata>
+  <plata>
+    <pacient>Gheorghe Firel</pacient>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <total>500</total>
+    <transa>500</transa>
+    <rest>0</rest>
+    <data>02.03.2018</data>
+    <descriere>kijpmjkim hbnk</descriere>
+  </plata>
+  <plata>
+    <pacient>Hidosul Viorel</pacient>
+    <medic>Dr. Popa Bogdan</medic>
+    <total>1000</total>
+    <transa>700</transa>
+    <rest>300</rest>
+    <data>02.03.2018</data>
+    <descriere>kjmlkjmm nolnm</descriere>
+  </plata>
+  <plata>
+    <pacient>Ungureanu Paula</pacient>
+    <medic>Dr. Ion Bogdan</medic>
+    <total>500</total>
+    <transa>500</transa>
+    <rest>0</rest>
+    <data>03.04.2018</data>
+    <descriere>iojoim jikbnionk</descriere>
+  </plata>
+  <plata>
+    <pacient>Miorul Ionel</pacient>
+    <medic>Dr. Popa Bogdan</medic>
+    <total>1000</total>
+    <transa>1000</transa>
+    <rest>0</rest>
+    <data>29.04.2018</data>
+    <descriere>Implant </descriere>
+  </plata>
+  <plata>
+    <pacient>Mihai Bălaşa</pacient>
+    <medic>Dr. Popa Bogdan</medic>
+    <total>1000</total>
+    <transa>800</transa>
+    <rest>200</rest>
+    <data>29.04.2018</data>
+    <descriere>transa implant</descriere>
+  </plata>
+</plati>

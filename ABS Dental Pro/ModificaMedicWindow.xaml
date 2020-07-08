@@ -1,0 +1,120 @@
+﻿<Window x:Class="ABS_Dental_Pro.ModificaMedicWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ABS_Dental_Pro"
+        mc:Ignorable="d"
+    Title="Modifică medic" Icon="Images/edit.png" Height="410" Width="650" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="myLabels" TargetType="Label">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        </Style>
+        <Style x:Key="myTextBoxes" TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,20,0,0" Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" d:LayoutOverrides="Height">
+                <Label Style="{StaticResource myLabels}"   Content="ID" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Nume" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Prenume" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Telefon" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Email" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Observații" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="0,20,0,0" Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" d:LayoutOverrides="Height">
+                <TextBox x:Name="tbID"
+                Style="{StaticResource myTextBoxes}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0,5,0,4"/>
+                <TextBox x:Name="tbNume" Style="{StaticResource myTextBoxes}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="0,3,0,4"/>
+                <TextBox x:Name="tbPrenume" Style="{StaticResource myTextBoxes}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="0,4"/>
+                <TextBox x:Name="tbTelefon" Style="{StaticResource myTextBoxes}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0,4"/>
+                <TextBox x:Name="tbEmail" Style="{StaticResource myTextBoxes}" Margin="0,4" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                <TextBox x:Name="tbObservatii" AcceptsReturn="True" TextWrapping="Wrap" Style="{StaticResource myTextBoxes}" Margin="0,3,0,0" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+            </StackPanel>
+
+            <Button x:Name="btnModifica"  Grid.Column="2" Margin="100,40,0,80" IsDefault="True" HorizontalAlignment="Left" Width="140" Height="40" VerticalAlignment="Top" d:LayoutOverrides="Height" Click="btnModifica_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/edit.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="50" Height="50"/>
+                    <TextBlock Text="Modifică" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnAnuleaza"  Grid.Column="2"  Margin="100,0,0,33.406" IsCancel="True" HorizontalAlignment="Left" Width="140" Height="40" VerticalAlignment="Bottom" Click="btnAnuleaza_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/close.png" RenderTransformOrigin="0.5,0.5" Margin="0,0,10,0" Width="40"/>
+                    <TextBlock Text="Închide" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <TextBlock  Text="Program de lucru" FontSize="18" Margin="10,20,0,10" />
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Luni:"   FontSize="16" Margin="10,10,20,0"/>
+            <TextBox x:Name="tbLuni1" Width="30" FontSize="16" Margin="25,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbLuni2" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text=","  FontSize="16" Margin="0,10,20,0"/>
+            <TextBox x:Name="tbLuni3" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbLuni4" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="Marți:"   FontSize="16" Margin="50,10,20,0"/>
+            <TextBox x:Name="tbMarti1" Width="30" FontSize="16" Margin="25,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbMarti2" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text=","  FontSize="16" Margin="0,10,20,0"/>
+            <TextBox x:Name="tbMarti3" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbMarti4" Width="30" FontSize="16" Margin="0,5,0,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Miercuri:"   FontSize="16" Margin="10,10,17,0"/>
+            <TextBox x:Name="tbMiercuri1" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbMiercuri2" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text=","  FontSize="16" Margin="0,10,20,0"/>
+            <TextBox x:Name="tbMiercuri3" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbMiercuri4" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="Joi:"   FontSize="16" Margin="50,10,20,0"/>
+            <TextBox x:Name="tbJoi1" Width="30" FontSize="16" Margin="43,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbJoi2" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text=","  FontSize="16" Margin="0,10,20,0"/>
+            <TextBox x:Name="tbJoi3" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbJoi4" Width="30" FontSize="16" Margin="0,5,0,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Vineri:"   FontSize="16" Margin="10,10,20,0"/>
+            <TextBox x:Name="tbVineri1" Width="30" FontSize="16" Margin="15,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbVineri2" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text=","  FontSize="16" Margin="0,10,20,0"/>
+            <TextBox x:Name="tbVineri3" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbVineri4" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="Sâmbătă:"   FontSize="16" Margin="50,10,20,0"/>
+            <TextBox x:Name="tbSambata1" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbSambata2" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text=","  FontSize="16" Margin="0,10,20,0"/>
+            <TextBox x:Name="tbSambata3" Width="30" FontSize="16" Margin="0,5,0,0"/>
+            <TextBlock Text="-"  FontSize="16" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbSambata4" Width="30" FontSize="16" Margin="0,5,0,0"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

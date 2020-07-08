@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pacienti>
+  <pacient>
+    <numarfisa>1</numarfisa>
+    <medic>Dr. Ion Bogdan</medic>
+    <nume>Popescu</nume>
+    <prenume>Gica</prenume>
+    <cnp>1900712908909</cnp>
+    <serieci>RT</serieci>
+    <numarci>874522</numarci>
+    <varsta>27</varsta>
+    <sex>M</sex>
+    <telefon>0745777777</telefon>
+    <email>gicapopescu@la.com</email>
+    <observatii>bla bla bla</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>2</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Șicleru</nume>
+    <prenume>Bogdan</prenume>
+    <cnp>1841022170068</cnp>
+    <serieci>LR</serieci>
+    <numarci>885123</numarci>
+    <varsta>33</varsta>
+    <sex>M</sex>
+    <telefon>0745328361</telefon>
+    <email>koo@hyun.pok</email>
+    <observatii>bop</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>3</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Ionel</nume>
+    <prenume>Costel</prenume>
+    <cnp>1881023172323</cnp>
+    <serieci>LO</serieci>
+    <numarci>845512</numarci>
+    <varsta>29</varsta>
+    <sex>M</sex>
+    <telefon>0746513321</telefon>
+    <email>njj</email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>4</numarfisa>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <nume>Pop</nume>
+    <prenume>Daniel</prenume>
+    <cnp>1841023365214</cnp>
+    <serieci>VU</serieci>
+    <numarci>465123</numarci>
+    <varsta>52</varsta>
+    <sex>M</sex>
+    <telefon>021123456</telefon>
+    <email>ji@nhokj.jm</email>
+    <observatii>lkoklp</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>5</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Popa</nume>
+    <prenume>Daniela</prenume>
+    <cnp>2801211211212</cnp>
+    <serieci>LG</serieci>
+    <numarci>662253</numarci>
+    <varsta>37</varsta>
+    <sex>F</sex>
+    <telefon>0745123123</telefon>
+    <email></email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>6</numarfisa>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <nume>Gheorghe</nume>
+    <prenume>Firel</prenume>
+    <cnp>1520217002358</cnp>
+    <serieci>rt</serieci>
+    <numarci>546971</numarci>
+    <varsta>65</varsta>
+    <sex>F</sex>
+    <telefon>0214785369</telefon>
+    <email>dadasd@alda.com</email>
+    <observatii>bleakj</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>7</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Ilinca</nume>
+    <prenume>Bianca</prenume>
+    <cnp>2851230124578</cnp>
+    <serieci>kl</serieci>
+    <numarci>854236</numarci>
+    <varsta>32</varsta>
+    <sex>F</sex>
+    <telefon>0765245862</telefon>
+    <email>dadsa@dada.com</email>
+    <observatii>dadsa</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>8</numarfisa>
+    <medic>Dr. Ionescu Elena</medic>
+    <nume>Briceag</nume>
+    <prenume>Marcel</prenume>
+    <cnp>1670531285630</cnp>
+    <serieci>fl</serieci>
+    <numarci>786235</numarci>
+    <varsta>50</varsta>
+    <sex>M</sex>
+    <telefon>0745369745</telefon>
+    <email>sasa@dadas.com</email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>9</numarfisa>
+    <medic>Dr. Popa Bogdan</medic>
+    <nume>Miorul</nume>
+    <prenume>Ionel</prenume>
+    <cnp>1810821567589</cnp>
+    <serieci>rv</serieci>
+    <numarci>125478</numarci>
+    <varsta>36</varsta>
+    <sex>M</sex>
+    <telefon>0736451298</telefon>
+    <email>dasdsa@ijiji.com</email>
+    <observatii>dadsa</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>10</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Pisici</nume>
+    <prenume>Miau</prenume>
+    <cnp>2740618123698</cnp>
+    <serieci>aa</serieci>
+    <numarci>452369</numarci>
+    <varsta>43</varsta>
+    <sex>F</sex>
+    <telefon>0732789632</telefon>
+    <email>sasa@hgfhfh.ro</email>
+    <observatii>dlask;dkad</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>11</numarfisa>
+    <medic>Dr. Ion Bogdan</medic>
+    <nume>Darvaru</nume>
+    <prenume>Ciocoi</prenume>
+    <cnp>194112545789695</cnp>
+    <serieci>jk</serieci>
+    <numarci>452369</numarci>
+    <varsta>23</varsta>
+    <sex>M</sex>
+    <telefon>0724364517</telefon>
+    <email>dadsa@glskg.it</email>
+    <observatii>sadsaddasdadasdsadadasd
+Il doare maseaua rau, trebuie sa i se curete caria
+Punct</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>12</numarfisa>
+    <medic>Dr. Popa Bogdan</medic>
+    <nume>Hidosul</nume>
+    <prenume>Viorel</prenume>
+    <cnp>1870624785412</cnp>
+    <serieci>gh</serieci>
+    <numarci>542349</numarci>
+    <varsta>30</varsta>
+    <sex>M</sex>
+    <telefon>0722896458</telefon>
+    <email>dasdsads@lkgdfkgdf.gr</email>
+    <observatii>Este hidos si miroase urat, trebuie sa ai grija cand vorbesti cu el pentru ca estre suparacios.</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>13</numarfisa>
+    <medic>Dr. Ionescu Elena</medic>
+    <nume>Kulea</nume>
+    <prenume>Iuliana</prenume>
+    <cnp>2750808459237</cnp>
+    <serieci>rl</serieci>
+    <numarci>6</numarci>
+    <varsta>42</varsta>
+    <sex>F</sex>
+    <telefon>0741369754</telefon>
+    <email>dadasdp@jfsfgsjk.gt</email>
+    <observatii>Am scris astazi o observatie lunga pentru a testa aplicatia si pentru a demonstra ca nu se da enter.</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>14</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Popescu</nume>
+    <prenume>Serban</prenume>
+    <cnp>1880909234785</cnp>
+    <serieci>nm</serieci>
+    <numarci>237564</numarci>
+    <varsta>29</varsta>
+    <sex>M</sex>
+    <telefon>0756328946</telefon>
+    <email>bion_tu@yahoo.com</email>
+    <observatii>Aici scrie un cacat</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>15</numarfisa>
+    <medic>Dr. Ionescu Elena</medic>
+    <nume>Radu</nume>
+    <prenume>Silviu</prenume>
+    <cnp>1450425348158</cnp>
+    <serieci>df</serieci>
+    <numarci>431697</numarci>
+    <varsta>72</varsta>
+    <sex>M</sex>
+    <telefon>0214523645</telefon>
+    <email></email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>16</numarfisa>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <nume>Avramescu</nume>
+    <prenume>Laurențiu Adrian</prenume>
+    <cnp>1931211192365</cnp>
+    <serieci>KJ</serieci>
+    <numarci>565652</numarci>
+    <varsta>24</varsta>
+    <sex>M</sex>
+    <telefon>074125245</telefon>
+    <email></email>
+    <observatii>ifyfy vhuy fgtccf bhbhj</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>17</numarfisa>
+    <medic>Dr. Ionescu Elena</medic>
+    <nume>Popovici</nume>
+    <prenume>Dana</prenume>
+    <cnp>2871010122346</cnp>
+    <serieci>FT</serieci>
+    <numarci>588956</numarci>
+    <varsta>30</varsta>
+    <sex>F</sex>
+    <telefon>0745123456</telefon>
+    <email></email>
+    <observatii>vgfvg</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>18</numarfisa>
+    <medic>Dr. Ion Bogdan</medic>
+    <nume>Lotrului</nume>
+    <prenume>Bogdan Constantin</prenume>
+    <cnp>1841222123456</cnp>
+    <serieci>FL</serieci>
+    <numarci>526525</numarci>
+    <varsta>33</varsta>
+    <sex>M</sex>
+    <telefon>0784555699</telefon>
+    <email></email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>19</numarfisa>
+    <medic>Dr. Ionescu Elena</medic>
+    <nume>Donose</nume>
+    <prenume>Andreea Diana</prenume>
+    <cnp>2981210145145</cnp>
+    <serieci>JU</serieci>
+    <numarci>558956</numarci>
+    <varsta>19</varsta>
+    <sex>F</sex>
+    <telefon>0555689523</telefon>
+    <email></email>
+    <observatii>ijohoip[</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>20</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Udrea</nume>
+    <prenume>Dan</prenume>
+    <cnp>180526323987</cnp>
+    <serieci>FR</serieci>
+    <numarci>252525</numarci>
+    <varsta>37</varsta>
+    <sex>M</sex>
+    <telefon></telefon>
+    <email></email>
+    <observatii>xd  cgtfc njihlkm</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>21</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Mapol</nume>
+    <prenume>Bogdan</prenume>
+    <cnp>1841014123147</cnp>
+    <serieci>HL</serieci>
+    <numarci>125212</numarci>
+    <varsta>33</varsta>
+    <sex>M</sex>
+    <telefon>121321</telefon>
+    <email></email>
+    <observatii>nkk cvg</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>22</numarfisa>
+    <medic>Dr. Popa Bogdan</medic>
+    <nume>Marc</nume>
+    <prenume>Dorian</prenume>
+    <cnp>1710810101296</cnp>
+    <serieci>HY</serieci>
+    <numarci>25625</numarci>
+    <varsta>48</varsta>
+    <sex>M</sex>
+    <telefon>02556968526</telefon>
+    <email></email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>23</numarfisa>
+    <medic>Dr. Popa Bogdan</medic>
+    <nume>Mihai</nume>
+    <prenume>Bălaşa</prenume>
+    <cnp>181012259893</cnp>
+    <serieci>TL</serieci>
+    <numarci>215258</numarci>
+    <varsta>54</varsta>
+    <sex>M</sex>
+    <telefon>0782255685</telefon>
+    <email></email>
+    <observatii>hyhuyh cty ftcyu gfcf</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>24</numarfisa>
+    <medic>Dr. Ion Bogdan</medic>
+    <nume>Contra</nume>
+    <prenume>Cosmin</prenume>
+    <cnp>16056362536</cnp>
+    <serieci>MK</serieci>
+    <numarci>586952</numarci>
+    <varsta>50</varsta>
+    <sex>M</sex>
+    <telefon></telefon>
+    <email></email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>25</numarfisa>
+    <medic>Dr. Constantinescu Ionel</medic>
+    <nume>Guetta</nume>
+    <prenume>David</prenume>
+    <cnp>1512214848</cnp>
+    <serieci>CF</serieci>
+    <numarci>58525445</numarci>
+    <varsta>49</varsta>
+    <sex>M</sex>
+    <telefon>0782855847</telefon>
+    <email>bvbhQ@fg.pl</email>
+    <observatii>iho oihiugh98i bkjg87gp97hyhhh</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>26</numarfisa>
+    <medic>Dr. Pene Dan</medic>
+    <nume>Haţegan</nume>
+    <prenume>Ovidiu</prenume>
+    <cnp>160456854</cnp>
+    <serieci>GT</serieci>
+    <numarci>325898</numarci>
+    <varsta>42</varsta>
+    <sex>M</sex>
+    <telefon>0859465458874</telefon>
+    <email></email>
+    <observatii>iuhjjoiu</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>27</numarfisa>
+    <medic>Dr. Pene Dan</medic>
+    <nume>Dică</nume>
+    <prenume>Nicolae</prenume>
+    <cnp>154969652</cnp>
+    <serieci>LT</serieci>
+    <numarci>51546965</numarci>
+    <varsta>45</varsta>
+    <sex>M</sex>
+    <telefon>048751512545</telefon>
+    <email></email>
+    <observatii>joijo ihiyhp90u</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>28</numarfisa>
+    <medic>Dr. Pene Dan</medic>
+    <nume>Lucescu</nume>
+    <prenume>Mircea</prenume>
+    <cnp>184125655865</cnp>
+    <serieci>BG</serieci>
+    <numarci>54845547</numarci>
+    <varsta></varsta>
+    <sex>M</sex>
+    <telefon>08544152156</telefon>
+    <email></email>
+    <observatii></observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>29</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Chivu</nume>
+    <prenume>Cristian</prenume>
+    <cnp>1825658525520</cnp>
+    <serieci>LO</serieci>
+    <numarci>2541699526</numarci>
+    <varsta>42</varsta>
+    <sex>M</sex>
+    <telefon>05258565650</telefon>
+    <email>jkbnmkn bkjnl</email>
+    <observatii>njnklk bh hj gvbhgvj</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>30</numarfisa>
+    <medic>Dr. Pop Loredana</medic>
+    <nume>Neagu</nume>
+    <prenume>Cristina</prenume>
+    <cnp>28824189852</cnp>
+    <serieci>nb</serieci>
+    <numarci>5884165</numarci>
+    <varsta>29</varsta>
+    <sex>F</sex>
+    <telefon>596269415</telefon>
+    <email></email>
+    <observatii>jkml iojij</observatii>
+  </pacient>
+  <pacient>
+    <numarfisa>31</numarfisa>
+    <medic>Dr. Ion Bogdan</medic>
+    <nume>Ungureanu</nume>
+    <prenume>Paula</prenume>
+    <cnp>26589962556563</cnp>
+    <serieci>jf</serieci>
+    <numarci>25962</numarci>
+    <varsta></varsta>
+    <sex>F</sex>
+    <telefon>0695418541</telefon>
+    <email></email>
+    <observatii>bhbjun bvjhbg bhhb</observatii>
+  </pacient>
+</pacienti>

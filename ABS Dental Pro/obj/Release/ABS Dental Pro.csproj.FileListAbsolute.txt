@@ -1,0 +1,65 @@
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Release\ABS Dental Pro.exe.config
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Release\ABS Dental Pro.exe
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Release\ABS Dental Pro.pdb
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaMedicComboWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaMedicWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaPlataDoiWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaPlataWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaProgramareWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\CautaPacientPlataWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\DespreWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\DetaliiMedic.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\DetaliiMedicCombo.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\IstoricPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\IstoricPlatiWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\MainWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\CautaPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\MessageBoxForm.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\MessageBoxFormOver.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaDescriereWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaMedicComboWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaMedicWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaPlataWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaProgramareWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\OreProgramariPacienti.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\OZiIntreaga.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ProgramariPacienti.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\SelecteazaProgramareWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\App.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro_MarkupCompile.cache
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro_MarkupCompile.lref
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaMedicComboWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaMedicWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaPlataDoiWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaPlataWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\AdaugaProgramareWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\CautaPacientPlataWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\DespreWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\DetaliiMedic.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\DetaliiMedicCombo.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\IstoricPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\IstoricPlatiWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\MainWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\CautaPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\MessageBoxForm.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\MessageBoxFormOver.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaDescriereWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaMedicComboWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaMedicWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaPlataWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ModificaProgramareWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\OreProgramariPacienti.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\OZiIntreaga.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ProgramariPacienti.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\SelecteazaProgramareWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro.g.resources
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS_Dental_Pro.Properties.Resources.resources
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro.csproj.GenerateResource.Cache
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro.exe
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro.pdb
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Release\ABS Dental Pro.csprojResolveAssemblyReference.cache

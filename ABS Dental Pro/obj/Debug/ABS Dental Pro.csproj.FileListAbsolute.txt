@@ -1,0 +1,169 @@
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.exe.config
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.exe
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.pdb
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csprojResolveAssemblyReference.cache
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MainWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\App.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro_MarkupCompile.cache
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro_MarkupCompile.lref
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MainWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.g.resources
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS_Dental_Pro.Properties.Resources.resources
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csproj.GenerateResource.Cache
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.exe
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.pdb
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DespreWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DespreWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPacientWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPacientWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxForm.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxForm.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPacientWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPacientWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedic.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedic.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicComboWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicComboWindow.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedicCombo.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedicCombo.baml
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicComboWindow.g.cs
+E:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicComboWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.exe.config
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.exe
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.pdb
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicComboWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DespreWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedic.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedicCombo.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MainWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxForm.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicComboWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\App.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro_MarkupCompile.cache
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro_MarkupCompile.lref
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicComboWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DespreWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedic.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedicCombo.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MainWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxForm.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicComboWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.g.resources
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS_Dental_Pro.Properties.Resources.resources
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csproj.GenerateResource.Cache
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.exe
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.pdb
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OZiIntreaga.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OZiIntreaga.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ProgramariPacienti.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ProgramariPacienti.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OreProgramariPacienti.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OreProgramariPacienti.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaProgramareWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaProgramareWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaProgramareWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaProgramareWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\SelecteazaProgramareWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\SelecteazaProgramareWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxFormOver.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxFormOver.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPacientWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPacientWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaDescriereWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaDescriereWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientPlataWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientPlataWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataDoiWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataDoiWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPlatiWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPlatiWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPlataWindow.g.cs
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPlataWindow.baml
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csprojAssemblyReference.cache
+F:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csproj.CoreCompileInputs.cache
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.exe.config
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.exe
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\bin\Debug\ABS Dental Pro.pdb
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csprojAssemblyReference.cache
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicComboWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPacientWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataDoiWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaProgramareWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientPlataWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DespreWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedic.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedicCombo.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPacientWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPlatiWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MainWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxForm.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxFormOver.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaDescriereWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicComboWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPacientWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPlataWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaProgramareWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OreProgramariPacienti.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OZiIntreaga.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ProgramariPacienti.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\SelecteazaProgramareWindow.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\App.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\GeneratedInternalTypeHelper.g.cs
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro_MarkupCompile.cache
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro_MarkupCompile.lref
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicComboWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaMedicWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPacientWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataDoiWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaPlataWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\AdaugaProgramareWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientPlataWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DespreWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedic.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\DetaliiMedicCombo.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPacientWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\IstoricPlatiWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MainWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\CautaPacientWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxForm.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\MessageBoxFormOver.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaDescriereWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicComboWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaMedicWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPacientWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaPlataWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ModificaProgramareWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OreProgramariPacienti.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\OZiIntreaga.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ProgramariPacienti.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\SelecteazaProgramareWindow.baml
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.g.resources
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS_Dental_Pro.Properties.Resources.resources
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csproj.GenerateResource.cache
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.csproj.CoreCompileInputs.cache
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.exe
+d:\BOGDAN\DEV\C#\ABS Dental Pro\ABS Dental Pro\obj\Debug\ABS Dental Pro.pdb

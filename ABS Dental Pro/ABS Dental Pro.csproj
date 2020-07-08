@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F811E1B1-20C5-4006-81C5-3ABB070CF8F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABS_Dental_Pro</RootNamespace>
+    <AssemblyName>ABS Dental Pro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tooth.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AdaugaMedicComboWindow.xaml.cs">
+      <DependentUpon>AdaugaMedicComboWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaMedicWindow.xaml.cs">
+      <DependentUpon>AdaugaMedicWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaPlataDoiWindow.xaml.cs">
+      <DependentUpon>AdaugaPlataDoiWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaPlataWindow.xaml.cs">
+      <DependentUpon>AdaugaPlataWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaProgramareWindow.xaml.cs">
+      <DependentUpon>AdaugaProgramareWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CautaPacientPlataWindow.xaml.cs">
+      <DependentUpon>CautaPacientPlataWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CautaPacientWindow.xaml.cs">
+      <DependentUpon>CautaPacientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IstoricPlatiWindow.xaml.cs">
+      <DependentUpon>IstoricPlatiWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaPlataWindow.xaml.cs">
+      <DependentUpon>ModificaPlataWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyConverter.cs" />
+    <Compile Include="Plata.cs" />
+    <Compile Include="Istorie.cs" />
+    <Compile Include="IstoricPacientWindow.xaml.cs">
+      <DependentUpon>IstoricPacientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxFormOver.xaml.cs">
+      <DependentUpon>MessageBoxFormOver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaDescriereWindow.xaml.cs">
+      <DependentUpon>ModificaDescriereWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelecteazaProgramareWindow.xaml.cs">
+      <DependentUpon>SelecteazaProgramareWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AdaugaMedicComboWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdaugaMedicWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdaugaPacientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdaugaPlataDoiWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdaugaPlataWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdaugaProgramareWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CautaPacientPlataWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DespreWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DetaliiMedic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DetaliiMedicCombo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IstoricPacientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IstoricPlatiWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AdaugaPacientWindow.xaml.cs">
+      <DependentUpon>AdaugaPacientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="CustomCommands.cs" />
+    <Compile Include="DespreWindow.xaml.cs">
+      <DependentUpon>DespreWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMedic.xaml.cs">
+      <DependentUpon>DetaliiMedic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMedicCombo.xaml.cs">
+      <DependentUpon>DetaliiMedicCombo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="CautaPacientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageBoxForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageBoxFormOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificaDescriereWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificaMedicComboWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificaMedicWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificaPacientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificaPlataWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificaProgramareWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OreProgramariPacienti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OZiIntreaga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgramariPacienti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelecteazaProgramareWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Medic.cs" />
+    <Compile Include="MessageBoxCustom.cs" />
+    <Compile Include="MessageBoxForm.xaml.cs">
+      <DependentUpon>MessageBoxForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaMedicComboWindow.xaml.cs">
+      <DependentUpon>ModificaMedicComboWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaMedicWindow.xaml.cs">
+      <DependentUpon>ModificaMedicWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaPacientWindow.xaml.cs">
+      <DependentUpon>ModificaPacientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaProgramareWindow.xaml.cs">
+      <DependentUpon>ModificaProgramareWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OreProgramariPacienti.xaml.cs">
+      <DependentUpon>OreProgramariPacienti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OZiIntreaga.xaml.cs">
+      <DependentUpon>OZiIntreaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pacient.cs" />
+    <Compile Include="Programare.cs" />
+    <Compile Include="ProgramariPacienti.xaml.cs">
+      <DependentUpon>ProgramariPacienti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Design\projectGuides.guides" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tooth_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\select128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Actions-arrow-left-double-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Actions-arrow-left-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Actions-arrow-right-double-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Actions-arrow-right-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\History-icon128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\History-icon32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\load2-upload-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\math-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Exclamation-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Tooth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\if_wallet_286672.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\if_wallet_286672.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

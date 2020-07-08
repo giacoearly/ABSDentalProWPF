@@ -1,0 +1,143 @@
+﻿<UserControl x:Class="ABS_Dental_Pro.DetaliiMedicCombo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ABS_Dental_Pro"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"  Height="440" Width="450" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <UserControl.Resources>
+        <Style x:Key="myLabels" TargetType="Label">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        </Style>
+        <Style x:Key="myTextBoxes" TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        </Style>
+        <Style x:Key="myTextBlocks" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,10,0,0" Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" d:LayoutOverrides="Height">
+                <Label Style="{StaticResource myLabels}"   Content="ID:" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Nume:" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Prenume:" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Telefon:" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Email:" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+                <Label Style="{StaticResource myLabels}" Content="Observații:" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="0,10,0,0" Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2" d:LayoutOverrides="Height">
+                <Label x:Name="lbID"
+               Style="{StaticResource myLabels}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0" Content=""/>
+                <Label x:Name="lbNume" Style="{StaticResource myLabels}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="0" Content=""/>
+                <Label x:Name="lbPrenume" Style="{StaticResource myLabels}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Margin="0" Content=""/>
+                <Label x:Name="lbTelefon" Style="{StaticResource myLabels}" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0" Content=""/>
+                <Label x:Name="lbEmail" Style="{StaticResource myLabels}" Margin="0" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition" Content=""/>
+                <Label x:Name="lbObservatii" Style="{StaticResource myLabels}" Margin="0" VerticalAlignment="Stretch" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Content=""/>
+            </StackPanel>
+
+            <Button x:Name="btnModifica"  Grid.Column="2" Margin="30,40,0,80"  IsDefault="True" HorizontalAlignment="Left" Width="120" Height="40" VerticalAlignment="Top" Click="btnModifica_Click" >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/edit.png" HorizontalAlignment="Left"
+                            VerticalAlignment="Center" Margin="0" RenderTransformOrigin="0.5,0.5" Width="30" Height="30"/>
+                    <TextBlock Text="Modifică"  Style="{StaticResource myTextBlocks}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,0,0" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnSterge"  Grid.Column="2"  Margin="30,0,0,33.406" IsCancel="True" HorizontalAlignment="Left" Width="120" Height="40" VerticalAlignment="Bottom" Click="btnSterge_Click" >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/remove.png" RenderTransformOrigin="0.5,0.5" Margin="0" Width="30"/>
+                    <TextBlock Text="Șterge"  Style="{StaticResource myTextBlocks}" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Label  Content="Program de lucru" Style="{StaticResource  myLabels}"  Margin="15,10,0,10" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80*"/>
+                <ColumnDefinition Width="52*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="52*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="52*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="52*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Luni:" Grid.Row="0" Grid.Column="0" Style="{StaticResource myLabels}" Margin="10,0,0,0"  />
+            <Label x:Name="lbLuni1" Grid.Row="0" Grid.Column="1"  Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"   />
+            <Label Content="-" Grid.Row="0" Grid.Column="2" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"  />
+            <Label x:Name="lbLuni2"  Grid.Row="0" Grid.Column="3" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content=","  Grid.Row="0" Grid.Column="4" Style="{StaticResource myLabels}" />
+            <Label x:Name="lbLuni3"  Grid.Row="0" Grid.Column="5" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-"  Grid.Row="0" Grid.Column="6" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbLuni4"  Grid.Row="0" Grid.Column="7" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"  />
+
+            <Label Content="Marți:" Grid.Row="1" Grid.Column="0" Style="{StaticResource myLabels}" Margin="10,0,0,0"  />
+            <Label x:Name="lbMarti1" Grid.Row="1" Grid.Column="1"  Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-" Grid.Row="1" Grid.Column="2" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"  />
+            <Label x:Name="lbMarti2"  Grid.Row="1" Grid.Column="3" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content=","  Grid.Row="1" Grid.Column="4" Style="{StaticResource myLabels}" />
+            <Label x:Name="lbMarti3"  Grid.Row="1" Grid.Column="5" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-"  Grid.Row="1" Grid.Column="6" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbMarti4"  Grid.Row="1" Grid.Column="7" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+
+            <Label Content="Miercuri:"  Grid.Row="2" Grid.Column="0"  Style="{StaticResource myLabels}" Margin="10,0,0,0" />
+            <Label x:Name="lbMiercuri1" Grid.Row="2" Grid.Column="1" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"  />
+            <Label Content="-" Grid.Row="2" Grid.Column="2" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbMiercuri2" Grid.Row="2" Grid.Column="3" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="," Grid.Row="2" Grid.Column="4"  Style="{StaticResource myLabels}" />
+            <Label x:Name="lbMiercuri3" Grid.Row="2" Grid.Column="5" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-" Grid.Row="2" Grid.Column="6" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbMiercuri4" Grid.Row="2" Grid.Column="7" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+
+            <Label Content="Joi:" Grid.Row="3" Grid.Column="0" Style="{StaticResource myLabels}" Margin="10,0,0,0"  />
+            <Label x:Name="lbJoi1" Grid.Row="3" Grid.Column="1"  Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-" Grid.Row="3" Grid.Column="2" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"  />
+            <Label x:Name="lbJoi2"  Grid.Row="3" Grid.Column="3" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content=","  Grid.Row="3" Grid.Column="4" Style="{StaticResource myLabels}" />
+            <Label x:Name="lbJoi3"  Grid.Row="3" Grid.Column="5" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-"  Grid.Row="3" Grid.Column="6" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbJoi4"  Grid.Row="3" Grid.Column="7" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+
+            <Label Content="Vineri:" Grid.Row="4" Grid.Column="0"  Style="{StaticResource myLabels}" Margin="10,0,0,0"  />
+            <Label x:Name="lbVineri1" Grid.Row="4" Grid.Column="1" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-" Grid.Row="4" Grid.Column="2" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbVineri2" Grid.Row="4" Grid.Column="3" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="," Grid.Row="4" Grid.Column="4" Style="{StaticResource myLabels}" />
+            <Label x:Name="lbVineri3" Grid.Row="4" Grid.Column="5" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-" Grid.Row="4" Grid.Column="6"  Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbVineri4" Grid.Row="4" Grid.Column="7" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+
+            <Label Content="Sâmbătă:" Grid.Row="5" Grid.Column="0" Style="{StaticResource myLabels}" Margin="10,0,0,0"   />
+            <Label x:Name="lbSambata1" Grid.Row="5" Grid.Column="1"  Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-" Grid.Row="5" Grid.Column="2" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center"  />
+            <Label x:Name="lbSambata2"  Grid.Row="5" Grid.Column="3" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content=","  Grid.Row="5" Grid.Column="4" Style="{StaticResource myLabels}" />
+            <Label x:Name="lbSambata3"  Grid.Row="5" Grid.Column="5" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label Content="-"  Grid.Row="5" Grid.Column="6" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+            <Label x:Name="lbSambata4"  Grid.Row="5" Grid.Column="7" Style="{StaticResource myLabels}" HorizontalContentAlignment="Center" />
+
+        </Grid>
+    </StackPanel>
+</UserControl>
